@@ -9,14 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack {
-            Image(systemName: "photo")
-            VStack(alignment: .leading) {
-                Text("长城")
-                Text("北京")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+        NavigationView {
+            List(landmarks) { landmark in
+                NavigationLink(
+                    destination: Text(landmark.name)){
+                    Image(landmark.thumbnailName).cornerRadius(8.0)
+                    VStack(alignment: .leading) {
+                        Text(landmark.name)
+                        Text(landmark.location)
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                    }
+                }
             }
+            .navigationBarTitle(Text("世界地标"))
         }
     }
 }

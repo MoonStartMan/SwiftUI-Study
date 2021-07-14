@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30A5844C269E7686000DCFE0 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A5844B269E7686000DCFE0 /* Landmark.swift */; };
 		30D3FBD0269DBD490067FB26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3FBCF269DBD490067FB26 /* AppDelegate.swift */; };
 		30D3FBD2269DBD490067FB26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3FBD1269DBD490067FB26 /* SceneDelegate.swift */; };
 		30D3FBD4269DBD490067FB26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3FBD3269DBD490067FB26 /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30A5844B269E7686000DCFE0 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		30D3FBCC269DBD490067FB26 /* WorldLandmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldLandmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D3FBCF269DBD490067FB26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30D3FBD1269DBD490067FB26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				30D3FBCF269DBD490067FB26 /* AppDelegate.swift */,
 				30D3FBD1269DBD490067FB26 /* SceneDelegate.swift */,
 				30D3FBD3269DBD490067FB26 /* ContentView.swift */,
+				30A5844B269E7686000DCFE0 /* Landmark.swift */,
 				30D3FBD5269DBD4B0067FB26 /* Assets.xcassets */,
 				30D3FBDA269DBD4B0067FB26 /* LaunchScreen.storyboard */,
 				30D3FBDD269DBD4B0067FB26 /* Info.plist */,
@@ -148,6 +151,7 @@
 				30D3FBD0269DBD490067FB26 /* AppDelegate.swift in Sources */,
 				30D3FBD2269DBD490067FB26 /* SceneDelegate.swift in Sources */,
 				30D3FBD4269DBD490067FB26 /* ContentView.swift in Sources */,
+				30A5844C269E7686000DCFE0 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
