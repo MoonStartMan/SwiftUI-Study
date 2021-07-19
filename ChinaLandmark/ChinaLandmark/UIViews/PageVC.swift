@@ -16,7 +16,7 @@ struct PageVC : UIViewControllerRepresentable {
     //        UIHostingController(rootView: $0)
     //    }
     
-    var pages: [UIViewController]
+    let pages: [UIViewController]
     init(){
         pages = featuredLandmarks.map{
             UIHostingController(

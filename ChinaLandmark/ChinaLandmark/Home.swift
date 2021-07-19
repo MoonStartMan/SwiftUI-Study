@@ -21,11 +21,14 @@ struct Home: View {
     var body: some View {
         NavigationView {
             List{
-                Image(landmarks[0].imageName)
-                    .resizable()
-                    .scaledToFill()
+//                Image(landmarks[0].imageName)
+//                    .resizable()
+//                    .scaledToFill()
+//                    .frame(height: 200)
+//                    .clipped()
+//                    .listRowInsets(EdgeInsets())
+                PageVC()
                     .frame(height: 200)
-                    .clipped()
                     .listRowInsets(EdgeInsets())
                 
                 ForEach(categories.keys.sorted(), id: \.self){
