@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300D889B26A5AA72003B1E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 300D889A26A5AA72003B1E33 /* Assets.xcassets */; };
 		301BCA1526A0076600771130 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301BCA1426A0076600771130 /* LandmarkDetail.swift */; };
-		301BCA1826A028A500771130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301BCA1726A028A500771130 /* Assets.xcassets */; };
 		30A5844C269E7686000DCFE0 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A5844B269E7686000DCFE0 /* Landmark.swift */; };
 		30D3FBD0269DBD490067FB26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3FBCF269DBD490067FB26 /* AppDelegate.swift */; };
 		30D3FBD2269DBD490067FB26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3FBD1269DBD490067FB26 /* SceneDelegate.swift */; };
@@ -18,9 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		300D889A26A5AA72003B1E33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		301BCA1426A0076600771130 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		301BCA1626A01F0600771130 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		301BCA1726A028A500771130 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../iOS13-SwiftUI界面开发Beta版/3-素材/3-7素材/WorldLandmark完成版/WorldLandmark/Assets.xcassets"; sourceTree = "<group>"; };
 		30A5844B269E7686000DCFE0 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		30D3FBCC269DBD490067FB26 /* WorldLandmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldLandmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D3FBCF269DBD490067FB26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		30D3FBCE269DBD490067FB26 /* WorldLandmark */ = {
 			isa = PBXGroup;
 			children = (
-				301BCA1726A028A500771130 /* Assets.xcassets */,
+				300D889A26A5AA72003B1E33 /* Assets.xcassets */,
 				30D3FBCF269DBD490067FB26 /* AppDelegate.swift */,
 				30D3FBD1269DBD490067FB26 /* SceneDelegate.swift */,
 				30D3FBD3269DBD490067FB26 /* ContentView.swift */,
@@ -141,8 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				30D3FBDC269DBD4B0067FB26 /* LaunchScreen.storyboard in Resources */,
+				300D889B26A5AA72003B1E33 /* Assets.xcassets in Resources */,
 				30D3FBD9269DBD4B0067FB26 /* Preview Assets.xcassets in Resources */,
-				301BCA1826A028A500771130 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
