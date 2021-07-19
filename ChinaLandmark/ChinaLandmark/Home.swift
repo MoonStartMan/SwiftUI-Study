@@ -9,6 +9,8 @@ import SwiftUI
 
 struct Home: View {
     
+    @State var showingProfile = false
+    
     var categories: [String: [Landmark]] {
         Dictionary(
             grouping: landmarks,
@@ -40,6 +42,16 @@ struct Home: View {
 //                    }
             }
             .navigationBarTitle(Text("精选"))
+            .navigationBarItems(trailing:
+                Button(action: {self.showingProfile.toggle()}) {
+                    Image(systemName: "person.crop.circle")
+                        .imageScale(.large)
+                        .padding()
+                }
+    )
+            .sheet(isPresented: $showingProfile, content: {
+                Profile()
+            })
         }
     }
 }
