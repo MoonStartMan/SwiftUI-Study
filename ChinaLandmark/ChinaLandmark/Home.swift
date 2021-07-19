@@ -58,6 +58,10 @@ struct Home: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        Home()
+        Group {
+            Home()
+            Home().environment(\.colorScheme, .dark)
+            Home().environment(\.sizeCategory, .accessibilityLarge)
+        }
     }
 }

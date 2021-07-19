@@ -10,7 +10,7 @@ import SwiftUI
 struct Profile: View {
     @Environment(\.editMode) var mode
     @State private var profile = User.default
-    @State private var profileCopy = 
+    @State private var profileCopy = User.default
     
     var dataFormatter: DateFormatter {
         let dateFormatter = DateFormatter()
@@ -20,7 +20,11 @@ struct Profile: View {
     var body: some View {
         VStack(alignment: .trailing){
             HStack {
-                Button(action: {}){
+                
+                Button(action: {
+                    self.profile = self.profileCopy
+                    self.mode?.animation().wrappedValue = .inactive
+                }){
                     Text("完成")
                 }
                 Spacer()
@@ -40,32 +44,9 @@ struct Profile: View {
                     }
                 }
             } else {
-                List{
-                    HStack {
-                        Text("昵称").bold()
-                        Divider()
-                        TextField("昵称", text: $profile.username)
-                    }
-                    
-                    Toggle(isOn: $profile.prefersNotifications, label: {
-                        Text("允许通知")
-                    })
-                    
-                    VStack(alignment: .leading){
-                        Text("喜欢的季节").bold()
-                        Picker("喜欢的季节", selection: $profile.prefersNotifications) {
-                            ForEach(User.Season.allCases, id: \.self) {
-                                season in
-                                Text(season.rawValue).tag(season.rawValue).tag(season)
-                            }
-                        }
-                    }
-                    .padding(.top)
-                    
-                    VStack(alignment: .leading) {
-                        DatePicker("生日", selection: $profile.birthday, displayedComponents: .date)
-                    }
-                    .padding(.top)
+                ProfileEditor(profileCopy: $profileCopy)
+                .onDisappear{
+                    self.profileCopy = self.profile
                 }
             }
         }
