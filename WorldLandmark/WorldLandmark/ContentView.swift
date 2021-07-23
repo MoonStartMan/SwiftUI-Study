@@ -23,6 +23,7 @@ struct ContentView : View {
             List(landmarks) { landmark in
                 
                 LandmarkCell(landmark: landmark)
+                
             }
             .navigationBarTitle(Text("世界地标"))
         }
