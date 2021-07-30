@@ -16,7 +16,7 @@ struct LoginView: View {
     
     
     
-    @EnvironmentObject var loginState: LoginState
+    @EnvironmentObject var loginState: PersonMessage
     
     @State private var jumpToLogin: String? = nil
     
@@ -42,21 +42,19 @@ struct LoginView: View {
                         .frame(width: 98.5, height: 98.5, alignment: .center)
                     
                     VStack(alignment: .trailing) {
-                        TextField("请输入手机号", text: $phoneNumber)
-                            .foregroundColor(hexColor(hex: 0x000000))
-                            .frame(width: 250, height: 40, alignment: .center)
-                            .font(.caption)
-                            .textFieldStyle(
-                                RoundedBorderTextFieldStyle()
-                            )
+                        LoginInput(
+                            inputTypeValue: .normal,
+                            placeHolder: "请输入手机号",
+                            loginAccount: $phoneNumber,
+                            loginPassword: .constant("")
+                        )
                             .padding(.top, 40)
-                        SecureField("请输入密码", text: $password)
-                            .foregroundColor(hexColor(hex: 0x000000))
-                            .frame(width: 250, height: 40, alignment: .center)
-                            .font(.caption)
-                            .textFieldStyle(
-                                RoundedBorderTextFieldStyle()
-                            )
+                        LoginInput(
+                            inputTypeValue: .password,
+                            placeHolder: "请输入密码",
+                            loginAccount: .constant(""),
+                            loginPassword: $password
+                        )
                         
                         Button("忘记密码", action: {})
                             .foregroundColor(hexColor(hex: 0x9FA0A0))
@@ -109,7 +107,6 @@ struct LoginView: View {
                                     .stroke(hexColor(hex: 0x1D5EF3), lineWidth: 1)
                         )
                         .padding(.top, 8)
-                    
                     Spacer()
                     Text("注册代表您同意 ")
                         .font(.footnote)

@@ -8,13 +8,26 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State private var jumpToPerson: String? = nil
+    
     var body: some View {
         ZStack {
+            NavigationLink(
+                "",
+                destination: PersonView(userMess: UserMessage.default).environmentObject(PersonMessage()),
+                tag:("toPerson"),
+                selection: $jumpToPerson
+            )
             VStack {
                 HStack {
                     Image("logo_white")
                     Spacer()
-                    Image("vip_icon")
+                    Button(action: {
+                        jumpToPerson = "toPerson"
+                    }, label: {
+                        Image("vip_icon")
+                    })
                 }
                 .padding(20)
                 
@@ -27,7 +40,7 @@ struct HomeView: View {
                     .padding(.top, 20)
                 
                 HomeClassifiesView()
-                .padding(20)
+                    .padding(20)
                 Spacer()
             }
             .offset(x: 0, y: 44.0)
