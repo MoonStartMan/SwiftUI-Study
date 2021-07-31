@@ -9,31 +9,7 @@ import SwiftUI
 
 struct PersonView: View {
     
-    @EnvironmentObject var personMess: PersonMessage
-    @State var userMess: UserMessage
-    
-    let list: [[String: String]] = [
-        [
-            "name": "用户姓名",
-            "text": UserMessage.default.userName
-        ],
-        [
-            "name": "用户性别",
-            "text": UserMessage.default.userGender.rawValue
-        ],
-        [
-            "name": "用户邮箱",
-            "text": UserMessage.default.userEmail
-        ],
-        [
-            "name": "用户电话",
-            "text": UserMessage.default.userPhone
-        ],
-        [
-            "name": "用户地址",
-            "text": UserMessage.default.userAdress
-        ]
-    ]
+    @EnvironmentObject var personDefaultMessage: PersonDefaultMessage
     
     var body: some View {
         ZStack {
@@ -48,6 +24,8 @@ struct PersonView: View {
                             .foregroundColor(hexColor(hex: 0xFFFFFF))
                     }
                     
+                    let list = getList()
+                    
                     List(0 ..< list.count) { i in
                         
                         PersonViewList(titleName: .constant(list[i]["name"]!), labelValue: .constant(list[i]["text"]!))
@@ -59,7 +37,7 @@ struct PersonView: View {
                 
                 HStack(alignment: .center) {
                     Button("修改用户信息") {
-                        self.personMess.toggleState.toggle()
+                        self.personDefaultMessage.toggleState.toggle()
                     }
                     .foregroundColor(hexColor(hex: 0x000000))
                     .font(.caption)
@@ -67,10 +45,10 @@ struct PersonView: View {
                     .background(hexColor(hex: 0xFFFFFF))
                     .cornerRadius(10)
                     .sheet(
-                        isPresented: self.$personMess.toggleState,
+                        isPresented: self.$personDefaultMessage.toggleState,
                         content: {
-                            ChangeUser(changeUser: .default).environmentObject(PersonMessage())
-                    })
+                            ChangeUser()
+                        })
                 }
                 .frame(width: UIScreen.main.bounds.size.width, height: 100)
             }
@@ -80,9 +58,38 @@ struct PersonView: View {
     }
 }
 
+extension PersonView {
+    func getList() -> [[String: String]]{
+        
+        return
+            [
+                [
+                    "name": "用户姓名",
+                    "text": UserMessage.default.userName
+                ],
+                [
+                    "name": "用户性别",
+                    "text": UserMessage.default.userGender.rawValue
+                ],
+                [
+                    "name": "用户邮箱",
+                    "text": UserMessage.default.userEmail
+                ],
+                [
+                    "name": "用户电话",
+                    "text": UserMessage.default.userPhone
+                ],
+                [
+                    "name": "用户地址",
+                    "text": UserMessage.default.userAdress
+                ]
+            ]
+    }
+}
+
 struct PersonView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonView(userMess: .default)
-            .environmentObject(PersonMessage())
+        PersonView()
+            .environmentObject(PersonDefaultMessage())
     }
 }

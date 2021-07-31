@@ -14,10 +14,11 @@ struct UserMessage {
     var userPhone:String = "19113984600" //    用户电话
     var userAdress:String = "四川省成都市" //   用户地址
     
-    static let `default` = Self(userName: "Tom")
+    static var `default` = Self(userName: "Tom")
     
     enum userGenderType: String, CaseIterable {
         case man = "男"
         case woman = "女"
     }
 }
+

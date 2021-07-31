@@ -15,7 +15,7 @@ struct HomeView: View {
         ZStack {
             NavigationLink(
                 "",
-                destination: PersonView(userMess: UserMessage.default).environmentObject(PersonMessage()),
+                destination: PersonView().environmentObject(PersonDefaultMessage()),
                 tag:("toPerson"),
                 selection: $jumpToPerson
             )

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3093D75A26B0EF4300CAFE00 /* UserMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3093D75926B0EF4300CAFE00 /* UserMessage.swift */; };
 		3093D75C26B0F30400CAFE00 /* DefaultAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3093D75B26B0F30400CAFE00 /* DefaultAccount.swift */; };
-		3093D75E26B1371D00CAFE00 /* PersonMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3093D75D26B1371D00CAFE00 /* PersonMessage.swift */; };
+		3093D75E26B1371D00CAFE00 /* PersonDefaultMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3093D75D26B1371D00CAFE00 /* PersonDefaultMessage.swift */; };
 		3094E73326AF91C600E21F5D /* HomeIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094E73226AF91C600E21F5D /* HomeIconView.swift */; };
 		3094E73626AF992600E21F5D /* iconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094E73526AF992600E21F5D /* iconData.swift */; };
 		3094E73826AFA1AF00E21F5D /* HomeClassifiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3094E73726AFA1AF00E21F5D /* HomeClassifiesView.swift */; };
@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		3093D75926B0EF4300CAFE00 /* UserMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMessage.swift; sourceTree = "<group>"; };
 		3093D75B26B0F30400CAFE00 /* DefaultAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAccount.swift; sourceTree = "<group>"; };
-		3093D75D26B1371D00CAFE00 /* PersonMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonMessage.swift; sourceTree = "<group>"; };
+		3093D75D26B1371D00CAFE00 /* PersonDefaultMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDefaultMessage.swift; sourceTree = "<group>"; };
 		3094E73226AF91C600E21F5D /* HomeIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIconView.swift; sourceTree = "<group>"; };
 		3094E73526AF992600E21F5D /* iconData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconData.swift; sourceTree = "<group>"; };
 		3094E73726AFA1AF00E21F5D /* HomeClassifiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeClassifiesView.swift; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 				3096F82D26AFD9730001D199 /* HomePageVCData.swift */,
 				3093D75926B0EF4300CAFE00 /* UserMessage.swift */,
 				3093D75B26B0F30400CAFE00 /* DefaultAccount.swift */,
-				3093D75D26B1371D00CAFE00 /* PersonMessage.swift */,
+				3093D75D26B1371D00CAFE00 /* PersonDefaultMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 				30A9A56126AC0B7400F6B099 /* SceneDelegate.swift in Sources */,
 				30BB53E626B3960400360870 /* ChangeUserInput.swift in Sources */,
 				30A9A57326AC0D3800F6B099 /* LoginView.swift in Sources */,
-				3093D75E26B1371D00CAFE00 /* PersonMessage.swift in Sources */,
+				3093D75E26B1371D00CAFE00 /* PersonDefaultMessage.swift in Sources */,
 				3094E73826AFA1AF00E21F5D /* HomeClassifiesView.swift in Sources */,
 				30F420BC26AEADC400C8A9BA /* HomeView.swift in Sources */,
 				30A9A56326AC0B7400F6B099 /* PersonView.swift in Sources */,

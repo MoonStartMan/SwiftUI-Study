@@ -16,7 +16,7 @@ struct LoginView: View {
     
     
     
-    @EnvironmentObject var loginState: PersonMessage
+    @EnvironmentObject var loginState: PersonDefaultMessage
     
     @State private var jumpToLogin: String? = nil
     

@@ -12,7 +12,7 @@ struct ChangeUser: View {
     @Environment(\.presentationMode) var personMess
     
     @State var changeUser: UserMessage = UserMessage.default
-    @State var oldUserMess: UserMessage = UserMessage.default
+    @State var oldUser: UserMessage = UserMessage.default
     
     var body: some View {
         ZStack {
@@ -57,6 +57,7 @@ struct ChangeUser: View {
                     
                     Button("提交", action: {
                         self.personMess.wrappedValue.dismiss()
+                        UserMessage.default = self.changeUser
                     })
                         .frame(width: 200, height: 50, alignment: .center)
                         .background(hexColor(hex: 0xFFFFFF))
@@ -76,6 +77,6 @@ struct ChangeUser: View {
 
 struct ChangeUser_Previews: PreviewProvider {
     static var previews: some View {
-        ChangeUser()
+        ChangeUser(changeUser: .default)
     }
 }
