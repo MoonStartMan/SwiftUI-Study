@@ -1,3 +1,12 @@
+//
+//  GraphCapsule.swift
+//  SwiftUI-Study
+//
+//  Created by MoonStartMan on 2024.
+//  图表胶囊视图组件，用于绘制徒步数据图表
+//
+//  详细说明这个文件的作用和主要功能
+//
 /*
 See LICENSE folder for this sample’s licensing information.
 
