@@ -1,4 +1,13 @@
 //
+//  LandmarkDetail.swift
+//  SwiftUI-Study
+//
+//  Created by MoonStartMan on 2024.
+//  中国地标详情视图，展示地标详细信息
+//
+//  详细说明这个文件的作用和主要功能
+//
+//
 //  ContentView.swift
 //  ChinaLandmark
 //
