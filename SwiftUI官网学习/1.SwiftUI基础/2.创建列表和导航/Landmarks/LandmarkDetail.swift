@@ -1,3 +1,12 @@
+//
+//  LandmarkDetail.swift
+//  SwiftUI-Study
+//
+//  Created by MoonStartMan on 2024.
+//  SwiftUI基础-列表导航：地标详情视图
+//
+//  详细说明这个文件的作用和主要功能
+//
 /*
 See LICENSE folder for this sample’s licensing information.
 
