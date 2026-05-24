@@ -1,3 +1,12 @@
+//
+//  User.swift
+//  SwiftUI-Study
+//
+//  Created by MoonStartMan on 2024.
+//  用户数据模型，定义用户信息结构
+//
+//  详细说明这个文件的作用和主要功能
+//
 import Foundation
 
 struct User {
