@@ -1,3 +1,12 @@
+//
+//  HikeGraph.swift
+//  SwiftUI-Study
+//
+//  Created by MoonStartMan on 2024.
+//  徒步图表视图，展示海拔、速度和心率数据
+//
+//  详细说明这个文件的作用和主要功能
+//
 /*
 See LICENSE folder for this sample’s licensing information.
 
