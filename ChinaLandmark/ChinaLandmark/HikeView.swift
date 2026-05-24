@@ -1,3 +1,12 @@
+//
+//  HikeView.swift
+//  SwiftUI-Study
+//
+//  Created by MoonStartMan on 2024.
+//  徒步详情视图，展示徒步路线的图表和动画
+//
+//  详细说明这个文件的作用和主要功能
+//
 import SwiftUI
 
 struct HikeView: View {
