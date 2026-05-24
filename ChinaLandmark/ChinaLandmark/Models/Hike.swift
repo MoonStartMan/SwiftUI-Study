@@ -1,3 +1,12 @@
+//
+//  Hike.swift
+//  SwiftUI-Study
+//
+//  Created by MoonStartMan on 2024.
+//  徒步数据模型，定义徒步路线和观察点
+//
+//  详细说明这个文件的作用和主要功能
+//
 import SwiftUI
 
 struct Hike: Codable, Hashable, Identifiable {
